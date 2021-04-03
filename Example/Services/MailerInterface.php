@@ -4,7 +4,7 @@
 namespace Example\Services;
 
 
-class MailerInterface
+interface MailerInterface
 {
 
 }

@@ -102,7 +102,7 @@ class Cart implements iCart
             $p += $item->getPrice() * 1.18 * $discount;
         }
         // Ордер сам может посчитать стоимость товаров
-        // лучше передать в ордер корзину
+        // можно корзину конвертировать в ордер
         $this->order = new Order($this->items, $p);
         // Поменять на метод интерфейса $this->notify()
         $this->sendMail();
